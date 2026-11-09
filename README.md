@@ -66,3 +66,5 @@ python -m unittest tests/test_stats_toolkit.py -v
 ├── requirements.txt         # Verification environment tracking layers (NumPy)
 └── README.md                # System documentation
 ```
+
+Built by: [Jesse Ngugi](https://ngugi.pages.dev)
