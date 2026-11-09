@@ -1,25 +1,34 @@
-=======================================================================
-            WAKALA PLUS AGENT SYSTEM - STRATEGIC RISK REPORT           
-=======================================================================
+=== Statistics report: daily_deposits_kes ===
+Rows read         : 40
+Valid values      : 35
+Rejected values   : 5
+  row 7: '' (invalid numeric value)
+  row 10: '-' (invalid numeric value)
+  row 14: 'n/a' (invalid numeric value)
+  row 25: '12,40O' (invalid numeric value)
+  row 29: '' (invalid numeric value)
 
-[SECTION 1: UNFILTERED ALL DATASET OBSERVATIONS]
-Dataset Profile 'deposit_total' contains no valid rows.
+                    all data       outliers removed
+count               35             31              
+mean                22400.00       18349.65        
+median              18805.47       18506.72        
+mode                none           none            
+variance (sample)   328019873.36   10116378.52     
+std dev (sample)    18111.32       3180.63         
+min / max           1200.00 / 96500.00 12772.70 / 26725.69
+Q1 / Q3             15998.40 / 20977.21 15998.40 / 20730.60
+IQR                 4978.81        4732.20         
 
------------------------------------------------------------------------
+Outlier fences      : lower 8530.19, upper 28445.41
+Outliers            : 96500.0, 1200.0, 88400.0, 29060.99
 
-[SECTION 2: CLEANED DATA PROFILE (OUTLIERS EXCISED)]
-Dataset Profile 'deposit_total_cleaned' contains no valid rows.
+=== NumPy verification ===
+mean      MATCH
+median    MATCH
+variance  MATCH   (ddof=1)
+std dev   MATCH
+Q1 / Q3   MATCH   (method=linear)
 
-=======================================================================
-               NUMPY PARITY VALIDATION ASSURANCE RESULTS               
-=======================================================================
-
-=======================================================================
-               RISK OPERATIONS TEAM BRIEFING STRATEGY                  
-=======================================================================
-1. Low outliers dropping under the fence bounds highlight structural risks such
-   as system hardware drops or severe float shortages at rural sub-agent terminals.
-2. Extreme positive deposit anomalies track spikes requiring verification against ledger
-   streams to systematically rule out fraudulent cash-looping behaviors or application exploits.
-3. Eliminating these transactional outliers reduces metric standard deviation significantly,
-   isolating a clean operational baseline for forecasting regional capital requirements.
+=== Unit tests ===
+Ran 9 tests in 0.009s
+OK
