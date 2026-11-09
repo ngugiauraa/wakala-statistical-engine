@@ -1,2 +1,13 @@
-/venv
-output/expected_report.txt
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Python compiler bytecode artifacts (cached script segments)
+**/__pycache__/
+*.py[cod]
+*$py.class
+
+# Local IDE configuration caches
+.vscode/
+
