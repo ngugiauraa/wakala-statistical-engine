@@ -1,0 +1,25 @@
+=======================================================================
+            WAKALA PLUS AGENT SYSTEM - STRATEGIC RISK REPORT           
+=======================================================================
+
+[SECTION 1: UNFILTERED ALL DATASET OBSERVATIONS]
+Dataset Profile 'deposit_total' contains no valid rows.
+
+-----------------------------------------------------------------------
+
+[SECTION 2: CLEANED DATA PROFILE (OUTLIERS EXCISED)]
+Dataset Profile 'deposit_total_cleaned' contains no valid rows.
+
+=======================================================================
+               NUMPY PARITY VALIDATION ASSURANCE RESULTS               
+=======================================================================
+
+=======================================================================
+               RISK OPERATIONS TEAM BRIEFING STRATEGY                  
+=======================================================================
+1. Low outliers dropping under the fence bounds highlight structural risks such
+   as system hardware drops or severe float shortages at rural sub-agent terminals.
+2. Extreme positive deposit anomalies track spikes requiring verification against ledger
+   streams to systematically rule out fraudulent cash-looping behaviors or application exploits.
+3. Eliminating these transactional outliers reduces metric standard deviation significantly,
+   isolating a clean operational baseline for forecasting regional capital requirements.

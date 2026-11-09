@@ -4,7 +4,7 @@ import unittest
 import tempfile
 from pathlib import Path
 
-from stats_toolkit import (
+from starter import (
     mean,
     median,
     mode,
